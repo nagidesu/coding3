@@ -1,0 +1,334 @@
+@charset"utf-8";
+@import"res_sub";
+
+@media(max-width: 1030px){
+
+    .header{
+        .header_bg{
+            .bg_color{
+                width: 80%;
+            }
+        }
+
+        .wrapper{
+            .header_nav{
+                .header_logo{
+                    img{
+                        width: 7vmin;
+                        height: 7vmin;
+                    }
+                    h1{
+                        font-size: 1.5rem;
+                        &::after{
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .header_right{
+                    right: 6vmin;
+                }
+
+                // javascript ヘッダーのメニューが黒くなります。
+                .header_right_color_1030px{
+                    .border{
+                        div{
+                            background-color: #222222;
+                        }
+                    }
+                    p{
+                        color: #222222;
+                    }
+                }
+
+                .menu_contents{
+                    .menu_content{
+                        right: 12vmin;
+                    }
+                }
+            }
+            .main_title{
+                position: absolute;
+                top: 30vmin;
+                right: 10vmin;
+                .sub_title{
+                    font-size: 1.2rem;
+                    font-weight: normal;
+                    letter-spacing: 0.063;
+                }
+                .main_title{
+                    font-size: 2rem;
+                }
+            }
+            }
+        }
+
+        .about{
+            .wrapper{
+                width: auto;
+                height: 50vh;
+                .section_contents{
+                    position: absolute;
+                    top: 100px;
+                    left: 120px;
+                }
+            }
+        }
+
+        .section_container{
+            .bg{
+                height: 120vmax;
+            }
+            .wrapper{
+                flex-direction: column;
+                margin: 0 5%;
+            }
+        }
+
+        .topics{
+            .wrapper{
+                margin: 0 5%;
+                .section_title{
+                    font-size: 1.2rem;
+                    margin: 0;
+                    padding: 0;
+                }
+                .section_contents{
+                    text-align: left;
+                    .section_content{
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        .contact{
+            .wrapper{
+                margin: 0 5%;
+                flex-direction: column-reverse;
+                align-items: flex-start;
+                .section_contents{
+                    width: 80%;
+                    .section_title{
+                        font-size: 1.2rem;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .section_content{
+                        font-size: 1.4rem;
+                    }
+                    .contact_button{
+                        margin-top: 5%;
+                    }
+                }
+                .contact_img{
+                    width: 80%;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+    }
+
+    @media(max-width: 780px){
+
+        .header{
+            .wrapper{
+                .header_nav{
+                    .header_right_color_780px{
+                        .border{
+                            div{
+                                background-color: #222222;
+                            }
+                        }
+                        p{
+                            color: #222222;
+                        }
+                    }
+                }
+            }
+        }
+
+        .about{
+            .wrapper{
+                .section_contents{
+                    position: absolute;
+                    top: 70px;
+                    left: 100px;
+                    width: 70vmin;
+                }
+            }
+        }
+
+        .section_container{
+            .bg{
+                height: 170vmin;
+            }
+        }
+    }
+
+    @media(max-width: 480px){
+
+        .header{
+            .wrapper{
+                .header_nav{
+                    .header_right{
+                        right: 10px;
+                        p{
+                            font-size: 0.9rem;
+                        }
+                        .border{
+                            div{
+                                width: 6vmin;
+                                &:nth-of-type(1){
+                                    transform: translate(-50%,-5px);
+                                }
+                                &:nth-of-type(3){
+                                    transform: translate(-50%,5px);
+                                }
+                            }
+                        }
+                    }
+
+                    // ヘッダーのメニューが黒くなります。
+                    .header_right_color_480px{
+                        .border{
+                            div{
+                                background-color: #222222;
+                            }
+                        }
+                        p{
+                            color: #222222;
+                        }
+                    }
+
+                    .border_open{
+                        .border{
+                            
+                            div{
+                                &:nth-of-type(1){
+                                    transform: rotate(-45deg) translate(-50%,3px);
+                                    transform-origin: 0 50%;
+                                    transition: .3s;
+                                }
+                                &:nth-of-type(2){
+                                    opacity: 0;
+                                    transition: .3s;
+                                }
+                                &:nth-of-type(3){
+                                    transform: rotate(45deg) translate(-50%,-3px);
+                                    transform-origin: 0 50%;
+                                    transition: .3s;
+                                }
+                            }
+                        }
+                    }
+                    
+                    .menu_contents{
+                        .bg2{
+                            width: 60%;
+                        }
+                        .menu_content{
+                            li{
+                                a{
+                                    img{
+                                        width: 10vmin;
+                                        height: 10vmin;
+                                    }
+                                    font-size: 1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .main_title{
+                    top: 33vmin;
+                    right: 8vmin;
+                    .sub_title{
+                        font-size: 1.1rem;
+                    }
+                    .title{
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+
+
+        .about{
+            .wrapper{
+                height: 80vh;
+                .section_contents{
+                    top: 13vmin;
+                    left: 8vmin;
+                    width: 85%;
+                    .section_title{
+                        font-size: 1.75rem;
+                        letter-spacing: 0.068rem;
+                    }
+                    .section_content{
+                        font-size: 0.9rem;
+                    }
+                    .button_decoration{
+                        @include res_button_decoration;
+                    }
+                }
+            }
+        }
+
+
+        .section_container{
+            .bg{
+                height: 220vmin;
+            }
+            .wrapper{
+                .section_contents{
+                    .section_content{
+                        .button_decoration{
+                            @include res_button_decoration;
+                        }
+                    }
+                }
+            }
+        }
+
+        .topics{
+            .wrapper{
+                .section_title{
+                    font-size: 1rem;
+                }
+                .section_contents{
+                    .button_decoration{
+                        @include res_button_decoration;
+                    }
+                }
+            }
+        }
+
+        .contact{
+            .wrapper{
+                .section_contents{
+                    width: 100%;
+                    .section_content{
+                        font-size: 1.1rem;
+                    }
+                    .button_decoration{
+                        @include res_button_decoration;
+                    }
+                    .contact_button{
+                        margin-left: 0;
+                    }
+                }
+                .contact_img{
+                    width: 100%;
+                }
+            }
+        }
+
+    }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main/contact.css">
+    <link rel="stylesheet" href="/css/responsive/res_contact.css">
+</head>
+<body>
+    
+    <section class="header">
+        <div class="header_bg">
+            <div class="bg_img">
+
+            </div>
+            <div class="bg_color">
+
+            </div>
+        </div>
+        <div class="wrapper">
+            <div class="header_nav">
+                <a class="header_logo" href="#">
+                    <img src="/img/header_logo.png" alt="会社のロゴデザインです。">
+                    <h1>DIGSMILE</h1>
+                </a>
+                <div class="header_right" id="header_right">
+                    <div class="border" id="border">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <p>MENU</p>
+                </div>
+                <div id="menu_contents">
+                    <div class="bg1"></div>
+                    <div class="bg2"></div>
+                    <ul class="menu_content">
+                        <li><a href="../index.html"><img src="/img/header_logo.png" alt="会社のロゴデザインです"></a></li>
+                        <li><a href="../index.html#about">ABOUT US</a></li>
+                        <li><a href="../index.html#works">WORKS</a></li>
+                        <li><a href="../index.html#culture">CULTURE</a></li>
+                        <li><a href="../index.html#topics">TOPICS</a></li>
+                        <li><a href="../index.html#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_title">
+                <h2 class="title">CONTACT</h2>
+                <h1 class="sub_title">お問い合わせ</h1>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact_form">
+        <div class="wrapper">
+            <p class="explanation">
+                ご依頼やご相談についてのご質問やご要望がございましたら、下記フォームよりお気軽にお問い合わせください。送付いただいた内容を確認の上、担当者からご連絡させていただきます。
+            </p>
+            <form action="#" method="post" class="form">
+                <div class="contact_type">
+                    <p class="required">お問い合わせ種別</p>
+                    <div class="request_block">
+                        <div class="request_container"><input type="radio" name="request" id="production" value="production"><label for="production" class="request">制作依頼</label></div>
+                        <div class="request_container"><input type="radio" name="request" id="adoption" value="adoption"><label for="adoption" class="request">採用</label></div>
+                        <div class="request_container"><input type="radio" name="request" id="ir" value="ir"><label for="ir" class="request">IR</label></div>
+                        <div class="request_container"><input type="radio" name="request" id="other" value="other"><label for="other" class="request">その他</label></div>
+                    </div>
+                </div>
+                <label for="company_name" class="text_form_decoration">会社名・団体名</label><input type="text" id="company_name" name="company_name" class="text_area">
+                <label for="your_name" class="text_form_decoration required">お名前</label><input type="text" id="your_name" name="your_name" class="text_area"> 
+                <label for="mail" class="text_form_decoration requored">メールアドレス</label><input type="email" id="mail" name="mail" class="text_area"> 
+                <label for="tell_number" class="text_form_decoration">電話番号</label><input type="number" id="tell_number" name="tell_number" class="text_area"> 
+                <label for="contact_content" class="text_form_decoration required">お問い合わせ内容</label><textarea name="contact_content" id="contact_content" cols="30" rows="10" class="text_area"></textarea>
+
+                <div class="privacy_policy">
+                    <p class="title">PRIVACY POLICY</p>
+                    <p class="privacy_content">
+                        個人情報保護方針<br>株式会社DIGSMILE（以下、当社）では、個人情報の重要性を認識し、以下の基準に従って、適切な管理、保護に努めます。  <span>1.個人情報の収集、利用 当社では、お客様との取引、サービスの提供のために個人情報を適法に収集し、収集した目的の範囲内で、個人情報を利用いたします。</span> <span>2.個人情報の第三者への開示と提供 収集したお客様の個人情報は、法的な要請等によらない限り、お客様の承諾を得ない第三者に対して提供・開示はいたしません。 業務の都合上、業務委託先に個人情報を提供する場合は、機</span>
+                    </p>
+                </div>
+
+                <div class="agree">
+                    <input type="checkbox" name="agree" id="agree"><label for="agree">個人情報の取り扱いについて同意のうえ送信します。</label>
+                </div>
+
+                <div class="contact_submit">
+                    <input type="submit" value="送信" class="submit">
+                </div>
+            </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <p>©2018 DIGSMILE INC.</p>
+    </section>
+
+    <script src="/javascript/contact.js"></script>
+</body>
+</html>

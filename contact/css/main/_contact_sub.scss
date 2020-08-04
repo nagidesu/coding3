@@ -1,0 +1,11 @@
+@charset"utf-8";
+
+@mixin required {
+    &::after{
+        content: "必須";
+        background-color: #222;
+        color: #fff;
+        margin-left: 10px;
+        padding: 3px;
+    }
+}

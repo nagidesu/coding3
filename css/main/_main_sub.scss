@@ -1,0 +1,14 @@
+@charset"utf-8";
+
+@mixin button_decoration {
+    background-color: #222222;
+    color: #ffffff;
+    display: block;
+    width: 20vmin;
+    text-align: center;
+    padding: 2.5vmin 0;
+    letter-spacing: 0.0015rem;
+    &:hover{
+        opacity: .8;
+    }
+}
